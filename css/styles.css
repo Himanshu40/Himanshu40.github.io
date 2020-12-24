@@ -1,0 +1,149 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* -------------------------- */
+/* ---------- MAIN ---------- */
+/* -------------------------- */
+#main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#main .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#bg {
+    z-index: 0;
+    position: absolute;
+    background-image: url('../img/unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    z-index: 1;
+}
+
+#content h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: normal;
+    line-height: 50px;
+    font-size: 45px;
+}
+
+.txt-rotate {
+    color: rgb(223, 167, 14);
+}
+
+#content p {
+    margin: 0;
+    padding-top: 20px;
+    color: white;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+    font-style: italic;
+    max-width: 500px;
+}
+
+/* --------------------------- */
+/* ---------- LINKS ---------- */
+/* --------------------------- */
+.links {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.button-style {
+    display: inline-block;
+    align-items: center;
+    border-radius: 45px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button-style span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-style span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-style:hover span {
+    padding-right: 25px;
+}
+
+.button-style:hover {
+    background-color:rgb(223, 167, 14);
+}
+  
+.button-style:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button-style + .button-style {
+    margin-left: 25px;
+}
+
+/* ------------------------- */
+/* --------- SOCIAL -------- */
+/* ------------------------- */
+#social {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-top: 100px;
+}
+
+#social a {
+    color: white;
+}
+
+#social a:hover {
+    color: rgb(223, 167, 14);
+}
+
+#social a + a {
+    margin-left: 35px;
+}
+
+#social i {
+    font-size: 30px;
+}
