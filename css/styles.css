@@ -41,6 +41,7 @@ html, body {
 
 #content {
     z-index: 1;
+    max-width: 580px;
 }
 
 #content h1 {
@@ -64,7 +65,6 @@ html, body {
     font-size: 19px;
     line-height: 26px;
     font-style: italic;
-    max-width: 500px;
 }
 
 /* --------------------------- */
