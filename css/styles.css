@@ -32,7 +32,6 @@ html, body {
 #bg {
     z-index: 0;
     position: absolute;
-    background-image: url('../img/unsplash.jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
