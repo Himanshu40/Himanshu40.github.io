@@ -21,9 +21,11 @@ TxtRotate.prototype.tick = function() {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
     var that = this;
-    var delta = 300 - Math.random() * 100;
 
-    if (this.isDeleting) { delta /= 2; }
+    var delta = 150 - Math.random() * 50; // Adjust speed
+    if (this.isDeleting) { 
+        delta /= 2; // Adjust deletion speed
+    }
 
     if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
